@@ -1,0 +1,47 @@
+﻿.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    display: block;
+    width: 100%;
+}
+.mt3 {
+    margin-top: 15px;
+}
+.img130 {
+    float: left;
+    margin-right: 5px;
+    padding: 2px;
+    width: 130px;
+     border: 1px solid #D8D8D8;
+}
+
+.mr1 {
+    margin-right: 5px;
+}
+.fl {
+    float: left;
+}
+.fon5 {
+    color: #000000;
+}
+.wid324 {
+    width: 324px;
+}
+.line1 {
+    background: none repeat scroll 0 0 #DBDBDB;
+    height: 1px;
+    overflow: hidden;
+}
+.mt1 {
+    margin-top: 5px;
+}
+.icon-detail {
+    background-position: 100% 2px;
+    float: right;
+    padding-right: 10px;
+}

@@ -1,0 +1,1253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{77479959-FD73-4E45-ADE3-4FE507564081}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HaloBoSach</RootNamespace>
+    <AssemblyName>HaloBoSach</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="AjaxMin, Version=5.14.5506.26196, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <HintPath>packages\AjaxMin.5.14.5506.26202\lib\net40\AjaxMin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net40\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="TinyFileManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\TinyFileManager.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\AdvertisingManagement.aspx" />
+    <Content Include="admin\AlbumManagement.aspx" />
+    <Content Include="admin\ChangePassword.aspx" />
+    <Content Include="admin\ConfigDisplayNewsCate.aspx" />
+    <Content Include="admin\Default.aspx" />
+    <Content Include="admin\EditAdvertising.aspx" />
+    <Content Include="admin\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="admin\fonts\style.css" />
+    <Content Include="admin\OrderManagement.aspx" />
+    <Content Include="admin\ProductCategoryImage.aspx" />
+    <Content Include="admin\Scripts\jscolor.min.js" />
+    <Content Include="admin\Style\PopupStyle.css" />
+    <Content Include="admin\tinymce\plugins\fileman\css\images\animated-overlay.gif" />
+    <Content Include="admin\tinymce\plugins\fileman\css\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="admin\tinymce\plugins\fileman\css\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="admin\tinymce\plugins\fileman\css\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="admin\tinymce\plugins\fileman\css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="admin\tinymce\plugins\fileman\css\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="admin\tinymce\plugins\fileman\css\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="admin\tinymce\plugins\fileman\css\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="admin\tinymce\plugins\fileman\css\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="admin\tinymce\plugins\fileman\css\images\ui-icons_222222_256x240.png" />
+    <Content Include="admin\tinymce\plugins\fileman\css\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="admin\tinymce\plugins\fileman\css\images\ui-icons_454545_256x240.png" />
+    <Content Include="admin\tinymce\plugins\fileman\css\images\ui-icons_888888_256x240.png" />
+    <Content Include="admin\tinymce\plugins\fileman\css\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="admin\tinymce\plugins\fileman\css\jquery-ui-1.10.4.custom.css" />
+    <Content Include="admin\tinymce\plugins\fileman\css\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="admin\tinymce\plugins\fileman\css\main.css" />
+    <Content Include="admin\tinymce\plugins\fileman\css\main.min.css" />
+    <Content Include="admin\tinymce\plugins\fileman\dev.html" />
+    <Content Include="admin\tinymce\plugins\fileman\images\action-folder-paste.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\action-folder-rename.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\arrow_down.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\arrow_up.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\blank.gif" />
+    <Content Include="admin\tinymce\plugins\fileman\images\copy.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\cut.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\dir-minus.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\dir-plus.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\file-add.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\file-delete.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\file-download.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\file-duplicate.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\file-upload.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_3gp.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_7z.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_ace.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_ai.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_aif.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_aiff.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_amr.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_asf.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_asx.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_bat.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_bin.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_bmp.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_bup.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_cab.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_cbr.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_cda.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_cdl.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_cdr.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_chm.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_dat.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_divx.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_dll.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_dmg.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_doc.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_dss.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_dvf.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_dwg.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_eml.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_eps.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_exe.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_fla.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_flv.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_gif.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_gz.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_hqx.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_htm.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_html.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_ifo.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_indd.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_iso.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_jar.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_jpeg.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_jpg.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_lnk.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_log.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_m4a.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_m4b.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_m4p.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_m4v.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_mcd.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_mdb.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_mid.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_mov.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_mp2.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_mp3.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_mp4.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_mpeg.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_mpg.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_msi.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_mswmm.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_ogg.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_pdf.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_png.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_pps.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_ps.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_psd.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_pst.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_ptb.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_pub.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_qbb.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_qbw.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_qxd.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_ram.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_rar.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_rm.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_rmvb.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_rtf.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_sea.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_ses.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_sit.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_sitx.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_ss.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_swf.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_tgz.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_thm.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_tif.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_tmp.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_torrent.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_ttf.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_txt.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_vcd.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_vob.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_wav.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_wma.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_wmv.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_wps.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_xls.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_xpi.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\file_extension_zip.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\big\unknown.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_3gp.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_7z.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_ace.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_ai.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_aif.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_aiff.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_amr.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_asf.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_asx.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_bat.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_bin.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_bmp.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_bup.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_cab.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_cbr.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_cda.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_cdl.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_cdr.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_chm.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_dat.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_divx.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_dll.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_dmg.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_doc.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_dss.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_dvf.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_dwg.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_eml.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_eps.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_exe.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_fla.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_flv.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_gif.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_gz.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_hqx.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_htm.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_html.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_ifo.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_indd.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_iso.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_jar.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_jpeg.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_jpg.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_lnk.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_log.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_m4a.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_m4b.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_m4p.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_m4v.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_mcd.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_mdb.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_mid.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_mov.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_mp2.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_mp3.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_mp4.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_mpeg.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_mpg.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_msi.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_mswmm.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_ogg.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_pdf.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_png.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_pps.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_ps.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_psd.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_pst.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_ptb.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_pub.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_qbb.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_qbw.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_qxd.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_ram.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_rar.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_rm.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_rmvb.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_rtf.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_sea.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_ses.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_sit.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_sitx.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_ss.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_swf.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_tgz.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_thm.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_tif.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_tmp.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_torrent.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_ttf.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_txt.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_vcd.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_vob.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_wav.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_wma.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_wmv.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_wps.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_xls.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_xpi.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\file_extension_zip.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\filetypes\unknown.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\find.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\folder-add.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\folder-delete.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\folder-download.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\folder-green.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\folder-opened.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\folder.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\loading-dir.gif" />
+    <Content Include="admin\tinymce\plugins\fileman\images\loading.gif" />
+    <Content Include="admin\tinymce\plugins\fileman\images\paste.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\preview.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\remove-upload - Copy.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\remove-upload.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\rename.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\search.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\select.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\sprite.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\stripes-reverse.gif" />
+    <Content Include="admin\tinymce\plugins\fileman\images\stripes.gif" />
+    <Content Include="admin\tinymce\plugins\fileman\images\upload-big.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\view-list.png" />
+    <Content Include="admin\tinymce\plugins\fileman\images\view-tile.png" />
+    <Content Include="admin\tinymce\plugins\fileman\index.html" />
+    <Content Include="admin\tinymce\plugins\fileman\js\custom.js" />
+    <Content Include="admin\tinymce\plugins\fileman\js\directory.js" />
+    <Content Include="admin\tinymce\plugins\fileman\js\file.js" />
+    <Content Include="admin\tinymce\plugins\fileman\js\filetypes.js" />
+    <Content Include="admin\tinymce\plugins\fileman\js\jquery-1.10.2.min.js" />
+    <Content Include="admin\tinymce\plugins\fileman\js\jquery-1.11.1.min.js" />
+    <Content Include="admin\tinymce\plugins\fileman\js\jquery-2.1.1.min.js" />
+    <Content Include="admin\tinymce\plugins\fileman\js\jquery-dateFormat.min.js" />
+    <Content Include="admin\tinymce\plugins\fileman\js\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="admin\tinymce\plugins\fileman\js\main.js" />
+    <Content Include="admin\tinymce\plugins\fileman\js\main.min.js" />
+    <Content Include="admin\tinymce\plugins\fileman\js\mini-main.js" />
+    <Content Include="admin\tinymce\plugins\fileman\js\tiny_mce_popup.js" />
+    <Content Include="admin\tinymce\plugins\fileman\js\utils.js" />
+    <Content Include="admin\tinymce\plugins\fileman\LICENSE.txt" />
+    <Content Include="admin\tinymce\plugins\fileman\third-party.txt" />
+    <Content Include="admin\tinymce\plugins\fileman\Uploads\LICENSE.txt" />
+    <Content Include="admin\img\icon-fail.png" />
+    <Content Include="admin\img\icon-ok.png" />
+    <Content Include="admin\img\throbber.gif" />
+    <Content Include="admin\NewsCategoryManagement.aspx" />
+    <Content Include="admin\NewsEditor.aspx" />
+    <Content Include="admin\NewsManagement.aspx" />
+    <Content Include="admin\ProductEditor.aspx" />
+    <Content Include="admin\Scripts\AdvertisingManagement.Event.js" />
+    <Content Include="admin\Scripts\AlbumManagement.Event.js" />
+    <Content Include="admin\Scripts\jquery-ui-1.10.4.custom.js" />
+    <Content Include="admin\Scripts\jquery.datetimepicker.js" />
+    <Content Include="admin\Scripts\jquery.form-validator.min.js" />
+    <Content Include="admin\Scripts\jquery.js" />
+    <Content Include="admin\Scripts\NewsCategoryManagement.Event.js" />
+    <Content Include="admin\Style\admin.css" />
+    <Content Include="admin\Style\bootstrap.min.css" />
+    <Content Include="admin\Style\images\animated-overlay.gif" />
+    <Content Include="admin\Style\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="admin\Style\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="admin\Style\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="admin\Style\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="admin\Style\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="admin\Style\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="admin\Style\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="admin\Style\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="admin\Style\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="admin\Style\images\ui-icons_222222_256x240.png" />
+    <Content Include="admin\Style\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="admin\Style\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="admin\Style\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="admin\Style\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="admin\Style\jquery-ui-1.10.4.custom.css" />
+    <Content Include="admin\Style\jquery.datetimepicker.css" />
+    <Content Include="admin\Style\Site.css" />
+    <Content Include="admin\tinymce\license.txt" />
+    <Content Include="admin\tinymce\plugins\advlist\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\anchor\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\autolink\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\autoresize\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\autosave\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\bbcode\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\charmap\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\code\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\compat3x\editable_selects.js" />
+    <Content Include="admin\tinymce\plugins\compat3x\form_utils.js" />
+    <Content Include="admin\tinymce\plugins\compat3x\mctabs.js" />
+    <Content Include="admin\tinymce\plugins\compat3x\tiny_mce_popup.js" />
+    <Content Include="admin\tinymce\plugins\compat3x\validate.js" />
+    <Content Include="admin\tinymce\plugins\contextmenu\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\directionality\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\emoticons\img\smiley-cool.gif" />
+    <Content Include="admin\tinymce\plugins\emoticons\img\smiley-cry.gif" />
+    <Content Include="admin\tinymce\plugins\emoticons\img\smiley-embarassed.gif" />
+    <Content Include="admin\tinymce\plugins\emoticons\img\smiley-foot-in-mouth.gif" />
+    <Content Include="admin\tinymce\plugins\emoticons\img\smiley-frown.gif" />
+    <Content Include="admin\tinymce\plugins\emoticons\img\smiley-innocent.gif" />
+    <Content Include="admin\tinymce\plugins\emoticons\img\smiley-kiss.gif" />
+    <Content Include="admin\tinymce\plugins\emoticons\img\smiley-laughing.gif" />
+    <Content Include="admin\tinymce\plugins\emoticons\img\smiley-money-mouth.gif" />
+    <Content Include="admin\tinymce\plugins\emoticons\img\smiley-sealed.gif" />
+    <Content Include="admin\tinymce\plugins\emoticons\img\smiley-smile.gif" />
+    <Content Include="admin\tinymce\plugins\emoticons\img\smiley-surprised.gif" />
+    <Content Include="admin\tinymce\plugins\emoticons\img\smiley-tongue-out.gif" />
+    <Content Include="admin\tinymce\plugins\emoticons\img\smiley-undecided.gif" />
+    <Content Include="admin\tinymce\plugins\emoticons\img\smiley-wink.gif" />
+    <Content Include="admin\tinymce\plugins\emoticons\img\smiley-yell.gif" />
+    <Content Include="admin\tinymce\plugins\emoticons\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\example\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\example_dependency\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\fullpage\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\fullscreen\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\hr\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\image\plugin.js" />
+    <Content Include="admin\tinymce\plugins\image\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\importcss\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\insertdatetime\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\layer\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\legacyoutput\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\link\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\lists\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\moxiemanager\moxieplayer.swf" />
+    <Content Include="admin\tinymce\plugins\moxiemanager\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\nonbreaking\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\noneditable\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\pagebreak\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\paste\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\preview\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\print\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\save\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\searchreplace\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\spellchecker\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\tabfocus\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\table\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\template\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\textcolor\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="admin\tinymce\plugins\visualblocks\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\visualchars\plugin.min.js" />
+    <Content Include="admin\tinymce\plugins\wordcount\plugin.min.js" />
+    <Content Include="admin\tinymce\skins\lightgray\content.inline.min.css" />
+    <Content Include="admin\tinymce\skins\lightgray\content.min.css" />
+    <Content Include="admin\tinymce\skins\lightgray\fonts\icomoon-small.svg" />
+    <Content Include="admin\tinymce\skins\lightgray\fonts\icomoon.svg" />
+    <Content Include="admin\tinymce\skins\lightgray\img\anchor.gif" />
+    <Content Include="admin\tinymce\skins\lightgray\img\loader.gif" />
+    <Content Include="admin\tinymce\skins\lightgray\img\object.gif" />
+    <Content Include="admin\tinymce\skins\lightgray\img\trans.gif" />
+    <Content Include="admin\tinymce\skins\lightgray\img\wline.gif" />
+    <Content Include="admin\tinymce\skins\lightgray\skin.ie7.min.css" />
+    <Content Include="admin\tinymce\skins\lightgray\skin.min.css" />
+    <Content Include="admin\tinymce\themes\modern\theme.min.js" />
+    <Content Include="admin\tinymce\tinymce.min.js" />
+    <Content Include="admin\UpdateNaviLink.aspx" />
+    <Content Include="admin\Upload.aspx" />
+    <Content Include="admin\VideoManagement.aspx" />
+    <Content Include="admin\ViewOrderDetail.aspx" />
+    <Content Include="Advertising.aspx" />
+    <Content Include="Ajax.aspx" />
+    <Content Include="AlbumDetail.aspx" />
+    <Content Include="CartSummary.aspx" />
+    <Content Include="CheckOut.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Cooking.aspx" />
+    <Content Include="css\basic.css" />
+    <Content Include="css\bootstrap-lightbox.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\dropzone.css" />
+    <Content Include="css\style.css" />
+    <Content Include="ctrl\BigAds.ascx" />
+    <Content Include="ctrl\bookflip\bookflip.ascx" />
+    <Content Include="ctrl\bookflip\css\jquery.ui.css" />
+    <Content Include="ctrl\bookflip\css\jquery.ui.html4.css" />
+    <Content Include="ctrl\bookflip\css\magazine.css" />
+    <Content Include="ctrl\bookflip\extras\jGestures-license.txt" />
+    <Content Include="ctrl\bookflip\extras\jgestures.min.js" />
+    <Content Include="ctrl\bookflip\extras\jquery-ui-1.8.20.custom.min.js" />
+    <Content Include="ctrl\bookflip\extras\jquery.min.1.7.js" />
+    <Content Include="ctrl\bookflip\extras\jquery.mousewheel.min.js" />
+    <Content Include="ctrl\bookflip\extras\modernizr.2.5.3.min.js" />
+    <Content Include="ctrl\bookflip\js\magazine.js" />
+    <Content Include="ctrl\bookflip\lib\hash.js" />
+    <Content Include="ctrl\bookflip\lib\scissor.js" />
+    <Content Include="ctrl\bookflip\lib\scissor.min.js" />
+    <Content Include="ctrl\bookflip\lib\turn.html4.js" />
+    <Content Include="ctrl\bookflip\lib\turn.html4.min.js" />
+    <Content Include="ctrl\bookflip\lib\turn.js" />
+    <Content Include="ctrl\bookflip\lib\turn.min.js" />
+    <Content Include="ctrl\bookflip\lib\zoom.js" />
+    <Content Include="ctrl\bookflip\lib\zoom.min.js" />
+    <Content Include="ctrl\bookflip\pics\arrows.png" />
+    <Content Include="ctrl\bookflip\pics\blank.png" />
+    <Content Include="ctrl\bookflip\pics\bookshelf_bg.png" />
+    <Content Include="ctrl\bookflip\pics\bookshelf_cut.png" />
+    <Content Include="ctrl\bookflip\pics\loader.gif" />
+    <Content Include="ctrl\bookflip\pics\logo-black.png" />
+    <Content Include="ctrl\bookflip\pics\zoom-icons-editable.png" />
+    <Content Include="ctrl\bookflip\pics\zoom-icons.png" />
+    <Content Include="ctrl\bookflip\pics\zoom.png" />
+    <Content Include="ctrl\CapNhatTinTuc.ascx" />
+    <Content Include="ctrl\circle-effect\css\common.css" />
+    <Content Include="ctrl\circle-effect\css\demo.css" />
+    <Content Include="ctrl\circle-effect\css\normalize.css" />
+    <Content Include="ctrl\circle-effect\css\style.css" />
+    <Content Include="ctrl\circle-effect\css\style2.css" />
+    <Content Include="ctrl\circle-effect\css\style3.css" />
+    <Content Include="ctrl\circle-effect\css\style4.css" />
+    <Content Include="ctrl\circle-effect\css\style5.css" />
+    <Content Include="ctrl\circle-effect\css\style6.css" />
+    <Content Include="ctrl\circle-effect\css\style7.css" />
+    <Content Include="ctrl\circle-effect\js\modernizr.js" />
+    <Content Include="ctrl\CongNgheCuoi.ascx" />
+    <Content Include="ctrl\EditCartInfo.ascx" />
+    <Content Include="ctrl\FloatShopCart.ascx" />
+    <Content Include="ctrl\ProductListControl.ascx" />
+    <Content Include="ctrl\QuangCaoNgang.ascx" />
+    <Content Include="ctrl\QuangCaoLon.ascx" />
+    <Content Include="ctrl\ShowTopNewsImage.ascx" />
+    <Content Include="ctrl\TitleBar.ascx" />
+    <Content Include="ctrl\TopQuangCao.ascx" />
+    <Content Include="ctrl\PlayOneVideo.ascx" />
+    <Content Include="ctrl\ListCateVideo.ascx" />
+    <Content Include="ctrl\GroupNewsTopImage.ascx" />
+    <Content Include="ctrl\ViewAlbum.ascx" />
+    <Content Include="ctrl\ListNewsTopBoldLink.ascx" />
+    <Content Include="ctrl\HotPhoto.ascx" />
+    <Content Include="ctrl\HotVideo.ascx" />
+    <Content Include="ctrl\LienKetWebSite.ascx" />
+    <Content Include="ctrl\ListNewsLink.ascx" />
+    <Content Include="ctrl\ListNewsTopImage.ascx" />
+    <Content Include="ctrl\QuangCao.ascx" />
+    <Content Include="ctrl\SlideShow.ascx" />
+    <Content Include="ctrl\TopNav.ascx" />
+    <Content Include="default.aspx" />
+    <Content Include="dialog.aspx" />
+    <Content Include="FAQ.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\style.css" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\blank.gif" />
+    <Content Include="images\book.jpg" />
+    <Content Include="images\bo_cong_thuong.png" />
+    <Content Include="images\camera-loader.gif" />
+    <Content Include="images\cart.png" />
+    <Content Include="images\chung_nhan.jpg" />
+    <Content Include="images\contact.jpg" />
+    <Content Include="images\faq.jpg" />
+    <Content Include="images\float_shop_cart.png" />
+    <Content Include="images\grey-arrow.jpg" />
+    <Content Include="images\grey-arrow2.jpg" />
+    <Content Include="images\halo.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\map.jpg" />
+    <Content Include="images\shop_cart.png" />
+    <Content Include="images\shop_cart_hover.png" />
+    <Content Include="images\social_network.jpg" />
+    <Content Include="images\video-sprite.png" />
+    <Content Include="images\yellow-arrow.jpg" />
+    <Content Include="img\loading.gif" />
+    <Content Include="img\transparent.gif" />
+    <Content Include="ctrl\ListNewsLine.ascx" />
+    <Content Include="js\bootstrap-lightbox.min.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\dropzone.min.js" />
+    <Content Include="js\jquery.1.9.1.min.js" />
+    <Content Include="NewsDetail.aspx" />
+    <Content Include="NewsList.aspx" />
+    <Content Include="PlayVideo.aspx" />
+    <Content Include="ProductCategory.aspx" />
+    <Content Include="ProductDetail.aspx" />
+    <Content Include="ProductList.aspx" />
+    <Content Include="Scripts\bootstrap-image-gallery.min.js" />
+    <Content Include="Scripts\bootstrapValidator.js" />
+    <Content Include="Scripts\bootstrapValidator.min.js" />
+    <Content Include="Scripts\camera.js" />
+    <Content Include="Scripts\camera.min.js" />
+    <Content Include="Scripts\Contact.Event.js" />
+    <Content Include="Scripts\iefix.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\jquery.als-1.7.min.js" />
+    <Content Include="Scripts\jquery.blockUI.js" />
+    <Content Include="Scripts\jquery.corner.js" />
+    <Content Include="Scripts\jquery.easing.1.3.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.mobile.customized.min.js" />
+    <Content Include="Scripts\jquery.scrollbox.js" />
+    <Content Include="Scripts\JSUtilities.js" />
+    <Content Include="Scripts\jtree\jstree.js" />
+    <Content Include="Scripts\jtree\jstree.min.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\PIE.htc" />
+    <Content Include="Scripts\PIE_IE678.js" />
+    <Content Include="Scripts\PIE_IE9.js" />
+    <Content Include="Scripts\require.js" />
+    <Content Include="Scripts\jtree\themes\default\32px.png" />
+    <Content Include="Scripts\jtree\themes\default\40px.png" />
+    <Content Include="Scripts\jtree\themes\default\style.css" />
+    <Content Include="Scripts\jtree\themes\default\style.min.css" />
+    <Content Include="Scripts\jtree\themes\default\throbber.gif" />
+    <Content Include="Scripts\WaterMark.min.js" />
+    <Content Include="Styles\bootstrap-image-gallery.min.css" />
+    <Content Include="Styles\bootstrap-theme.min.css" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Styles\bootstrapValidator.min.css" />
+    <Content Include="Styles\camera.css" />
+    <Content Include="Styles\hover_drop_2.css" />
+    <Content Include="Styles\news_item.css" />
+    <Content Include="Styles\responsive.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="test.aspx" />
+    <Content Include="ThankYou.aspx" />
+    <Content Include="themes\halobosach\CSSreset.min.css" />
+    <Content Include="themes\halobosach\halobosach.css" />
+    <Content Include="ViewBook.aspx" />
+    <Content Include="CustViewOrderDetail.aspx" />
+    <Content Include="ViewPhoto.aspx" />
+    <Content Include="ViewVideo.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\AdvertisingManagement.aspx.cs">
+      <DependentUpon>AdvertisingManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AdvertisingManagement.aspx.designer.cs">
+      <DependentUpon>AdvertisingManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\AlbumManagement.aspx.cs">
+      <DependentUpon>AlbumManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AlbumManagement.aspx.designer.cs">
+      <DependentUpon>AlbumManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ConfigDisplayNewsCate.aspx.cs">
+      <DependentUpon>ConfigDisplayNewsCate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ConfigDisplayNewsCate.aspx.designer.cs">
+      <DependentUpon>ConfigDisplayNewsCate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\EditAdvertising.aspx.cs">
+      <DependentUpon>EditAdvertising.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\EditAdvertising.aspx.designer.cs">
+      <DependentUpon>EditAdvertising.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\NewsCategoryManagement.aspx.cs">
+      <DependentUpon>NewsCategoryManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\NewsCategoryManagement.aspx.designer.cs">
+      <DependentUpon>NewsCategoryManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\NewsEditor.aspx.cs">
+      <DependentUpon>NewsEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\NewsEditor.aspx.designer.cs">
+      <DependentUpon>NewsEditor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\NewsManagement.aspx.cs">
+      <DependentUpon>NewsManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\NewsManagement.aspx.designer.cs">
+      <DependentUpon>NewsManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\OrderManagement.aspx.cs">
+      <DependentUpon>OrderManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\OrderManagement.aspx.designer.cs">
+      <DependentUpon>OrderManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ProductCategoryImage.aspx.cs">
+      <DependentUpon>ProductCategoryImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ProductCategoryImage.aspx.designer.cs">
+      <DependentUpon>ProductCategoryImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ProductEditor.aspx.cs">
+      <DependentUpon>ProductEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ProductEditor.aspx.designer.cs">
+      <DependentUpon>ProductEditor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\UpdateNaviLink.aspx.cs">
+      <DependentUpon>UpdateNaviLink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\UpdateNaviLink.aspx.designer.cs">
+      <DependentUpon>UpdateNaviLink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Upload.aspx.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Upload.aspx.designer.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\VideoManagement.aspx.cs">
+      <DependentUpon>VideoManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\VideoManagement.aspx.designer.cs">
+      <DependentUpon>VideoManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ViewOrderDetail.aspx.cs">
+      <DependentUpon>ViewOrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ViewOrderDetail.aspx.designer.cs">
+      <DependentUpon>ViewOrderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Advertising.aspx.cs">
+      <DependentUpon>Advertising.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Advertising.aspx.designer.cs">
+      <DependentUpon>Advertising.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax.aspx.cs">
+      <DependentUpon>Ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax.aspx.designer.cs">
+      <DependentUpon>Ajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AlbumDetail.aspx.cs">
+      <DependentUpon>AlbumDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlbumDetail.aspx.designer.cs">
+      <DependentUpon>AlbumDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CartSummary.aspx.cs">
+      <DependentUpon>CartSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CartSummary.aspx.designer.cs">
+      <DependentUpon>CartSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOut.aspx.cs">
+      <DependentUpon>CheckOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckOut.aspx.designer.cs">
+      <DependentUpon>CheckOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cooking.aspx.cs">
+      <DependentUpon>Cooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cooking.aspx.designer.cs">
+      <DependentUpon>Cooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\BigAds.ascx.cs">
+      <DependentUpon>BigAds.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\BigAds.ascx.designer.cs">
+      <DependentUpon>BigAds.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\bookflip\bookflip.ascx.cs">
+      <DependentUpon>bookflip.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\bookflip\bookflip.ascx.designer.cs">
+      <DependentUpon>bookflip.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\CapNhatTinTuc.ascx.cs">
+      <DependentUpon>CapNhatTinTuc.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\CapNhatTinTuc.ascx.designer.cs">
+      <DependentUpon>CapNhatTinTuc.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\CongNgheCuoi.ascx.cs">
+      <DependentUpon>CongNgheCuoi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\CongNgheCuoi.ascx.designer.cs">
+      <DependentUpon>CongNgheCuoi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\EditCartInfo.ascx.cs">
+      <DependentUpon>EditCartInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\EditCartInfo.ascx.designer.cs">
+      <DependentUpon>EditCartInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\FloatShopCart.ascx.cs">
+      <DependentUpon>FloatShopCart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\FloatShopCart.ascx.designer.cs">
+      <DependentUpon>FloatShopCart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\ProductListControl.ascx.cs">
+      <DependentUpon>ProductListControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\ProductListControl.ascx.designer.cs">
+      <DependentUpon>ProductListControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\QuangCaoNgang.ascx.cs">
+      <DependentUpon>QuangCaoNgang.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\QuangCaoNgang.ascx.designer.cs">
+      <DependentUpon>QuangCaoNgang.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\QuangCaoLon.ascx.cs">
+      <DependentUpon>QuangCaoLon.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\QuangCaoLon.ascx.designer.cs">
+      <DependentUpon>QuangCaoLon.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\ShowTopNewsImage.ascx.cs">
+      <DependentUpon>ShowTopNewsImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\ShowTopNewsImage.ascx.designer.cs">
+      <DependentUpon>ShowTopNewsImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\TitleBar.ascx.cs">
+      <DependentUpon>TitleBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\TitleBar.ascx.designer.cs">
+      <DependentUpon>TitleBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\TopQuangCao.ascx.cs">
+      <DependentUpon>TopQuangCao.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\TopQuangCao.ascx.designer.cs">
+      <DependentUpon>TopQuangCao.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\PlayOneVideo.ascx.cs">
+      <DependentUpon>PlayOneVideo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\PlayOneVideo.ascx.designer.cs">
+      <DependentUpon>PlayOneVideo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\ListCateVideo.ascx.cs">
+      <DependentUpon>ListCateVideo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\ListCateVideo.ascx.designer.cs">
+      <DependentUpon>ListCateVideo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\GroupNewsTopImage.ascx.cs">
+      <DependentUpon>GroupNewsTopImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\GroupNewsTopImage.ascx.designer.cs">
+      <DependentUpon>GroupNewsTopImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\ViewAlbum.ascx.cs">
+      <DependentUpon>ViewAlbum.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\ViewAlbum.ascx.designer.cs">
+      <DependentUpon>ViewAlbum.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\ListNewsTopBoldLink.ascx.cs">
+      <DependentUpon>ListNewsTopBoldLink.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\ListNewsTopBoldLink.ascx.designer.cs">
+      <DependentUpon>ListNewsTopBoldLink.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\HotPhoto.ascx.cs">
+      <DependentUpon>HotPhoto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\HotPhoto.ascx.designer.cs">
+      <DependentUpon>HotPhoto.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\HotVideo.ascx.cs">
+      <DependentUpon>HotVideo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\HotVideo.ascx.designer.cs">
+      <DependentUpon>HotVideo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\LienKetWebSite.ascx.cs">
+      <DependentUpon>LienKetWebSite.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\LienKetWebSite.ascx.designer.cs">
+      <DependentUpon>LienKetWebSite.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\ListNewsLink.ascx.cs">
+      <DependentUpon>ListNewsLink.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\ListNewsLink.ascx.designer.cs">
+      <DependentUpon>ListNewsLink.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\ListNewsTopImage.ascx.cs">
+      <DependentUpon>ListNewsTopImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\ListNewsTopImage.ascx.designer.cs">
+      <DependentUpon>ListNewsTopImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\QuangCao.ascx.cs">
+      <DependentUpon>QuangCao.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\QuangCao.ascx.designer.cs">
+      <DependentUpon>QuangCao.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\SlideShow.ascx.cs">
+      <DependentUpon>SlideShow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\SlideShow.ascx.designer.cs">
+      <DependentUpon>SlideShow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\TopNav.ascx.cs">
+      <DependentUpon>TopNav.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\TopNav.ascx.designer.cs">
+      <DependentUpon>TopNav.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\DataAccessLayer.cs" />
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dialog.aspx.cs">
+      <DependentUpon>dialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dialog.aspx.designer.cs">
+      <DependentUpon>dialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="entity\Album.cs" />
+    <Compile Include="entity\MenuItem.cs" />
+    <Compile Include="entity\ShoppingCart.cs" />
+    <Compile Include="FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl\ListNewsLine.ascx.cs">
+      <DependentUpon>ListNewsLine.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ctrl\ListNewsLine.ascx.designer.cs">
+      <DependentUpon>ListNewsLine.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsDetail.aspx.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsDetail.aspx.designer.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsList.aspx.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsList.aspx.designer.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlayVideo.aspx.cs">
+      <DependentUpon>PlayVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlayVideo.aspx.designer.cs">
+      <DependentUpon>PlayVideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategory.aspx.cs">
+      <DependentUpon>ProductCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductCategory.aspx.designer.cs">
+      <DependentUpon>ProductCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetail.aspx.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductDetail.aspx.designer.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="themes\halobosach\HaloBoSach.Master.cs">
+      <DependentUpon>HaloBoSach.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="themes\halobosach\HaloBoSach.Master.designer.cs">
+      <DependentUpon>HaloBoSach.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYou.aspx.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThankYou.aspx.designer.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities.cs" />
+    <Compile Include="ViewBook.aspx.cs">
+      <DependentUpon>ViewBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewBook.aspx.designer.cs">
+      <DependentUpon>ViewBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustViewOrderDetail.aspx.cs">
+      <DependentUpon>CustViewOrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustViewOrderDetail.aspx.designer.cs">
+      <DependentUpon>CustViewOrderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPhoto.aspx.cs">
+      <DependentUpon>ViewPhoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewPhoto.aspx.designer.cs">
+      <DependentUpon>ViewPhoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewVideo.aspx.cs">
+      <DependentUpon>ViewVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewVideo.aspx.designer.cs">
+      <DependentUpon>ViewVideo.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="admin\tinymce\plugins\fileman\aspnet_client\system_web\2_0_50727\" />
+    <Folder Include="admin\tinymce\plugins\fileman\aspnet_client\system_web\4_0_30319\" />
+    <Folder Include="admin\tinymce\plugins\fileman\tmp\" />
+    <Folder Include="admin\tinymce\plugins\fileman\Uploads\Documents\" />
+    <Folder Include="admin\tinymce\plugins\fileman\Uploads\FLV\" />
+    <Folder Include="admin\tinymce\plugins\fileman\Uploads\Images\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\Admin.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="themes\halobosach\HaloBoSach.Master" />
+    <Content Include="packages.config" />
+    <Content Include="admin\tinymce\plugins\fileman\asp_net\main.ashx" />
+    <Content Include="admin\tinymce\plugins\fileman\conf.json" />
+    <Content Include="admin\tinymce\plugins\fileman\lang\bg.json" />
+    <Content Include="admin\tinymce\plugins\fileman\lang\ca.json" />
+    <Content Include="admin\tinymce\plugins\fileman\lang\cs.json" />
+    <Content Include="admin\tinymce\plugins\fileman\lang\cs1.json" />
+    <Content Include="admin\tinymce\plugins\fileman\lang\da.json" />
+    <Content Include="admin\tinymce\plugins\fileman\lang\de.json" />
+    <Content Include="admin\tinymce\plugins\fileman\lang\en.json" />
+    <Content Include="admin\tinymce\plugins\fileman\lang\es.json" />
+    <Content Include="admin\tinymce\plugins\fileman\lang\fr.json" />
+    <Content Include="admin\tinymce\plugins\fileman\lang\hu.json" />
+    <Content Include="admin\tinymce\plugins\fileman\lang\it.json" />
+    <Content Include="admin\tinymce\plugins\fileman\lang\nl.json" />
+    <Content Include="admin\tinymce\plugins\fileman\lang\pl.json" />
+    <Content Include="admin\tinymce\plugins\fileman\lang\pt.json" />
+    <Content Include="admin\tinymce\plugins\fileman\lang\ru.json" />
+    <Content Include="admin\tinymce\plugins\fileman\lang\sk.json" />
+    <Content Include="admin\tinymce\plugins\fileman\lang\tr.json" />
+    <Content Include="admin\tinymce\plugins\fileman\web.config" />
+    <Content Include="admin\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="admin\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="admin\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="admin\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="admin\fonts\MYRIADPRO-BOLD.woff" />
+    <Content Include="admin\fonts\MYRIADPRO-BOLDCOND.woff" />
+    <Content Include="admin\fonts\MYRIADPRO-BOLDCONDIT.woff" />
+    <Content Include="admin\fonts\MYRIADPRO-BOLDIT.woff" />
+    <Content Include="admin\fonts\MYRIADPRO-COND.woff" />
+    <Content Include="admin\fonts\MYRIADPRO-CONDIT.woff" />
+    <Content Include="admin\fonts\MYRIADPRO-REGULAR.woff" />
+    <Content Include="admin\fonts\MYRIADPRO-SEMIBOLD.woff" />
+    <Content Include="admin\fonts\MYRIADPRO-SEMIBOLDIT.woff" />
+    <None Include="admin\tinymce\langs\readme.md" />
+    <None Include="admin\tinymce\skins\lightgray\fonts\icomoon-small.eot" />
+    <None Include="admin\tinymce\skins\lightgray\fonts\icomoon-small.ttf" />
+    <None Include="admin\tinymce\skins\lightgray\fonts\icomoon-small.woff" />
+    <None Include="admin\tinymce\skins\lightgray\fonts\icomoon.eot" />
+    <None Include="admin\tinymce\skins\lightgray\fonts\icomoon.ttf" />
+    <None Include="admin\tinymce\skins\lightgray\fonts\icomoon.woff" />
+    <None Include="admin\tinymce\skins\lightgray\fonts\readme.md" />
+    <Content Include="fonts\MYRIADPRO-BOLD.woff" />
+    <Content Include="fonts\MYRIADPRO-BOLDCOND.woff" />
+    <Content Include="fonts\MYRIADPRO-BOLDCONDIT.woff" />
+    <Content Include="fonts\MYRIADPRO-BOLDIT.woff" />
+    <Content Include="fonts\MYRIADPRO-COND.woff" />
+    <Content Include="fonts\MYRIADPRO-CONDIT.woff" />
+    <Content Include="fonts\MYRIADPRO-REGULAR.woff" />
+    <Content Include="fonts\MYRIADPRO-SEMIBOLD.woff" />
+    <Content Include="fonts\MYRIADPRO-SEMIBOLDIT.woff" />
+    <Content Include="Scripts\ProductDetail.Event.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="ctrl\bookflip\lib\compress.sh" />
+    <Content Include="AdvImage\release.log" />
+    <Content Include="Albums\release.log" />
+    <Content Include="NewsAvarta\release.log" />
+    <Content Include="Product\release.log" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <Content Include="UserFiles\release.log" />
+    <Content Include="release.log" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64702</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8888</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

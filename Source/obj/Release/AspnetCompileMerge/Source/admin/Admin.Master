@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="HaloBoSach.admin.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Style/Site.css" rel="stylesheet" type="text/css" />
+    <link href="Style/admin.css" rel="stylesheet" type="text/css" />
+    <link href="Style/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/admin/Style/jquery-ui-1.10.4.custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/Scripts/jquery.js"></script>
+    <script type="text/javascript" src="/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/admin/Scripts/jquery-ui-1.10.4.custom.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                    <asp:MenuItem NavigateUrl="~/default.aspx" Text="Trang chủ"/>
+                        <asp:MenuItem NavigateUrl="~/admin/NewsCategoryManagement.aspx" Text="QL tin"/>
+                        <asp:MenuItem NavigateUrl="~/admin/AdvertisingManagement.aspx" Text="QL banner"/>
+                         <asp:MenuItem NavigateUrl="~/admin/ConfigDisplayNewsCate.aspx" Text="Cấu hình dữ liệu"/>
+                         <asp:MenuItem NavigateUrl="~/admin/AlbumManagement.aspx" Text="QL hình ảnh"/>
+                         <%--<asp:MenuItem NavigateUrl="~/admin/VideoManagement.aspx" Text="QL Video"/>--%>
+                        <asp:MenuItem NavigateUrl="~/admin/OrderManagement.aspx" Text="QL đơn hàng"/>
+                        <asp:MenuItem NavigateUrl="~/admin/ChangePassword.aspx" Text="Đổi mật khẩu"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+    <div class="admin-content-page">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

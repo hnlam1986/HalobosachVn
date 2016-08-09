@@ -1,0 +1,10 @@
+D:\Lam Huynh\Project\HaloBoSach\Source\bin\HaloBoSach.dll
+D:\Lam Huynh\Project\HaloBoSach\Source\bin\HaloBoSach.pdb
+D:\Lam Huynh\Project\HaloBoSach\Source\bin\AjaxMin.dll
+D:\Lam Huynh\Project\HaloBoSach\Source\bin\Microsoft.Web.Infrastructure.dll
+D:\Lam Huynh\Project\HaloBoSach\Source\bin\Microsoft.Web.Infrastructure.xml
+D:\Lam Huynh\Project\HaloBoSach\Source\obj\Debug\HaloBoSach.dll
+D:\Lam Huynh\Project\HaloBoSach\Source\obj\Debug\HaloBoSach.pdb
+D:\Lam Huynh\Project\HaloBoSach\Source\bin\Newtonsoft.Json.dll
+D:\Lam Huynh\Project\HaloBoSach\Source\bin\Newtonsoft.Json.xml
+D:\Lam Huynh\Project\HaloBoSach\Source\obj\Debug\HaloBoSach.csprojResolveAssemblyReference.cache

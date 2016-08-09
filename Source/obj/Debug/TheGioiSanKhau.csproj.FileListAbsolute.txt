@@ -1,0 +1,24 @@
+E:\Project\TheGioiSanKhau\TheGioiSanKhau\bin\TheGioiSanKhau.dll
+E:\Project\TheGioiSanKhau\TheGioiSanKhau\bin\TheGioiSanKhau.pdb
+E:\Project\TheGioiSanKhau\TheGioiSanKhau\obj\Debug\TheGioiSanKhau.dll
+E:\Project\TheGioiSanKhau\TheGioiSanKhau\obj\Debug\TheGioiSanKhau.pdb
+E:\Project\TheGioiSanKhau\TheGioiSanKhau\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\Project\TheGioiSanKhau\TheGioiSanKhau\bin\Microsoft.Web.Infrastructure.dll
+E:\Project\TheGioiSanKhau\TheGioiSanKhau\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\Project\TheGioiSanKhau\TheGioiSanKhau\obj\Debug\TheGioiSanKhau.csprojResolveAssemblyReference.cache
+D:\Lam Huynh\Project\TheGioiSanKhau\TheGioiSanKhau\bin\TheGioiSanKhau.dll
+D:\Lam Huynh\Project\TheGioiSanKhau\TheGioiSanKhau\bin\TheGioiSanKhau.pdb
+D:\Lam Huynh\Project\TheGioiSanKhau\TheGioiSanKhau\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Lam Huynh\Project\TheGioiSanKhau\TheGioiSanKhau\bin\Microsoft.Web.Infrastructure.dll
+D:\Lam Huynh\Project\TheGioiSanKhau\TheGioiSanKhau\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Lam Huynh\Project\TheGioiSanKhau\TheGioiSanKhau\obj\Debug\TheGioiSanKhau.csprojResolveAssemblyReference.cache
+D:\Lam Huynh\Project\TheGioiSanKhau\TheGioiSanKhau\obj\Debug\TheGioiSanKhau.dll
+D:\Lam Huynh\Project\TheGioiSanKhau\TheGioiSanKhau\obj\Debug\TheGioiSanKhau.pdb
+D:\Lam Huynh\GitHub\TheGioiSanKhau\Source\bin\TheGioiSanKhau.dll
+D:\Lam Huynh\GitHub\TheGioiSanKhau\Source\bin\TheGioiSanKhau.pdb
+D:\Lam Huynh\GitHub\TheGioiSanKhau\Source\bin\Microsoft.Web.Infrastructure.dll
+D:\Lam Huynh\GitHub\TheGioiSanKhau\Source\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Lam Huynh\GitHub\TheGioiSanKhau\Source\bin\Microsoft.Web.Infrastructure.xml
+D:\Lam Huynh\GitHub\TheGioiSanKhau\Source\obj\Debug\TheGioiSanKhau.csprojResolveAssemblyReference.cache
+D:\Lam Huynh\GitHub\TheGioiSanKhau\Source\obj\Debug\TheGioiSanKhau.dll
+D:\Lam Huynh\GitHub\TheGioiSanKhau\Source\obj\Debug\TheGioiSanKhau.pdb

@@ -1,0 +1,1159 @@
+﻿body
+{
+    font-family: 'Myriad Pro Regular', Arial, Tahoma !important;
+    font-size: 14px;
+    background-color: #d4d5d5!important;
+}
+
+    body a
+    {
+        color: #909801;
+        cursor: pointer;
+    }
+
+.green-text
+{
+    color: #909801;
+}
+
+.main-content
+{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #ffffff!important;
+}
+/*============================================HEADER====================================================*/
+.div-header
+{
+    width: 100%;
+    height: 778px;
+    display: block;
+    background-image: url('/images/banner.jpg');
+}
+
+.header-top-nav
+{
+    position: absolute;
+    right: 30px;
+    top: 96px;
+    z-index: 1;
+}
+
+.company-logo
+{
+    position: absolute;
+    left: 30px;
+    top: 57px;
+    z-index: 1;
+}
+
+    .company-logo .img-logo
+    {
+        width: 152px;
+        height: 136px;
+    }
+
+.opacity-80
+{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /* IE 8 */
+    filter: alpha(opacity=80); /* IE 5-7 */
+    -moz-opacity: 0.8; /* Netscape */
+    -khtml-opacity: 0.8; /* Safari 1.x */
+    opacity: 0.8;
+}
+
+.nav-item, .nav-first-item, .nav-last-item
+{
+    background-color: #a6c428;
+    background: rgba(166, 196, 40, 0.8);
+    width: 75px;
+    height: 141px;
+    padding-top: 10px;
+    text-transform: lowercase;
+    font-family: 'Myriad Pro Condensed', Arial, Tahoma !important;
+    font-size: 25px;
+    padding: 32px 0;
+    font-weight: normal;
+}
+
+.header-top-nav #menu li:hover
+{
+    background: rgb(156, 196, 40);
+}
+
+.header-top-nav #menu li.sub li a:hover
+{
+    background: none;
+    color: #000000;
+}
+
+    .header-top-nav #menu li.sub li a:hover::before
+    {
+        content: "\e072";
+        font-family: "Glyphicons Halflings";
+        background: none;
+        color: #000000;
+        display: inline;
+        float: left;
+        position: absolute;
+        left: 5px;
+        top: 8px;
+        font-size: 10px;
+    }
+
+.header-top-nav #menu :hover ul
+{
+    left: 0;
+    top: 141px;
+    background-color: #ffffff;
+    background: rgba(255, 255, 255, 0.8);
+    width: 200px;
+}
+
+.header-top-nav #menu li.sub li
+{
+    background: none;
+    float: left;
+    height: 30px;
+    position: relative;
+    width: 200px;
+    padding-left: 20px;
+}
+
+.header-top-nav .nav-sub-item
+{
+    font-family: 'Myriad Pro Condensed', Arial, Tahoma !important;
+    width: 200px;
+    padding-top: 4px;
+}
+
+.header-top-nav #menu li.sub li a
+{
+    font-size: 17px;
+    text-align: left;
+    color: #427c03;
+}
+
+/*============================================FOOTER====================================================*/
+.div-footer
+{
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 0 30px;
+    padding-top: 10px;
+}
+
+    .div-footer .green-bar
+    {
+        background-color: #a6c428;
+        position: relative;
+        height: 21px;
+        font-size: 15px;
+        padding: 0 10px;
+        font-style: italic;
+    }
+
+        .div-footer .green-bar .web-url
+        {
+            color: #ffffff;
+            float: left;
+        }
+
+        .div-footer .green-bar .company-name
+        {
+            color: #585959;
+            float: right;
+        }
+
+.main-content .gray-bar
+{
+    font-style: italic;
+    background-color: #d4d5d5;
+    text-align: right;
+    padding: 0 10px;
+    color: #727171;
+    height: 20px;
+}
+
+    .main-content .gray-bar .green-point
+    {
+        color: #aeb801;
+        margin: 0 20px;
+    }
+
+.footer-info
+{
+    height: 320px;
+    position: relative;
+    padding: 20px 0;
+}
+
+    .footer-info .company-info
+    {
+        color: #909801;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-info .more-info
+    {
+        text-align: left;
+        margin-top: 60px;
+    }
+
+        .footer-info .more-info .glyphicon
+        {
+            font-size: 10px;
+            margin-right: 5px;
+            color: #ea9822;
+        }
+
+    .footer-info .safe-food-cerificate
+    {
+        color: #909801;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-info .other
+    {
+        color: #909801;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-info .safe-web-cert, .footer-info .follow-us
+    {
+        color: #909801;
+        text-align: center;
+    }
+
+    .footer-info .follow-us
+    {
+        margin-top: 50px;
+    }
+
+        .footer-info .follow-us .div-social
+        {
+            height: 50px;
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+
+    .footer-info .div-social div
+    {
+        margin: 0 5px;
+        width: 49px;
+        height: 49px;
+        background-image: url(/images/social_network.jpg);
+    }
+
+.div-social .facebook
+{
+    background-position: 0 0;
+}
+
+.div-social .google-plus
+{
+    background-position: -61px 0;
+}
+
+.div-social .tweeter
+{
+    background-position: -122px 0;
+}
+
+.div-social .youtube
+{
+    background-position: -182px 0;
+}
+
+.bold-text
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+/*============================================CONTAIN====================================================*/
+.div-contain
+{
+    width: 100%;
+    display: table;
+    padding: 0 30px;
+}
+    /*============================================HOME====================================================*/
+    .div-contain .home-banner
+    {
+        background-image: url(/images/halo.jpg);
+        background-repeat: no-repeat;
+        height: 219px;
+        width: 966px;
+        margin: 10px auto;
+    }
+
+.gray-light-bar
+{
+    background-color: #dee1e3;
+    margin: 10px 0;
+    clear: both;
+}
+
+    .gray-light-bar .gray-dark-bar
+    {
+        background-color: #7f8c8d;
+        color: #ffffff;
+        display: table;
+        font-family: "Myriad Pro Condensed",Arial,Tahoma !important;
+        font-size: 30px;
+        line-height: 51px;
+        min-width: 251px;
+        padding: 0 10px;
+        text-transform: uppercase;
+    }
+
+.control-product-list .ch-grid li
+{
+    display: inline-block;
+    height: 191px;
+    margin-bottom: 100px;
+    padding: 0 25px;
+}
+
+    .control-product-list .ch-grid li h3
+    {
+        margin: 5px 0;
+        font-family: 'Myriad Pro Condensed', Arial, Tahoma !important;
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+
+        .control-product-list .ch-grid li h3 a
+        {
+            color: #ea9822;
+        }
+
+    .control-product-list .ch-grid li .product-price
+    {
+        margin-bottom: 6px;
+    }
+
+        .control-product-list .ch-grid li .product-price .price
+        {
+            color: red;
+        }
+
+    .control-product-list .ch-grid li .take-to-cart
+    {
+        background-image: url("/images/shop_cart.png");
+        background-position: 0 0;
+        cursor: pointer;
+        padding-top: 8px;
+        padding-bottom: 10px;
+    }
+
+        .control-product-list .ch-grid li .take-to-cart .select-product
+        {
+            height: 40px;
+            width: 122px;
+            background-image: url(/images/shop_cart.png);
+            background-position: 0 0;
+            margin: 0 auto;
+        }
+
+        .control-product-list .ch-grid li .take-to-cart:hover .select-product
+        {
+            cursor: pointer;
+            background-image: url(/images/shop_cart.png);
+            background-position: 0 -167px;
+        }
+
+.float-shop-cart
+{
+    background-image: url("/images/float_shop_cart.png");
+    background-repeat: no-repeat;
+    bottom: 0;
+    color: #fff;
+    display: block;
+    height: 77px;
+    left: 50%;
+    margin-left: -112px;
+    position: fixed;
+    text-align: center;
+    width: 165px;
+    z-index: 99999;
+}
+
+    .float-shop-cart .shop-cart-item
+    {
+        left: 78px;
+        position: absolute;
+        top: 17px;
+        width: 29px;
+        font-weight: bold;
+    }
+
+    .float-shop-cart .shop-cart-total
+    {
+        font-weight: bold;
+        left: 0px;
+        position: absolute;
+        top: 56px;
+        width: 160px;
+    }
+
+.cart-icon-outbound
+{
+    padding: 9px 75px;
+    margin-top: 17px;
+}
+
+    .cart-icon-outbound a:hover .cart-icon
+    {
+        background-position: -41px -1px;
+    }
+
+.ch-grid .cart-icon
+{
+    height: 38px;
+    width: 38px;
+    background-image: url(/images/cart.png);
+    background-position: -1px -1px;
+}
+
+.view-detail-icon-outbound
+{
+    padding: 10px 75px;
+}
+
+    .view-detail-icon-outbound a:hover .view-detail-icon
+    {
+        background-position: -41px 39px;
+    }
+
+.ch-grid .view-detail-icon
+{
+    height: 38px;
+    width: 38px;
+    background-image: url(/images/cart.png);
+    background-position: -1px 39px;
+}
+
+.ch-item .ch-info span
+{
+    color: #ffffff;
+}
+
+.ch-item .ch-info p
+{
+    padding: 2px 5px;
+}
+/*===================================CART SUMMARY=====================================*/
+#divCartSummary .form-group
+{
+    margin-bottom: 0;
+}
+
+.update-quantity
+{
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.list-category
+{
+    padding: 0;
+}
+
+    .list-category li
+    {
+        list-style: outside none none;
+        width: 956px;
+        height: 308px;
+        overflow: hidden;
+        margin-bottom: 2px;
+        border-radius: 13px;
+        position: relative;
+    }
+
+        .list-category li.odd
+        {
+            border: 4px solid #ef635a;
+        }
+
+        .list-category li.even
+        {
+            border: 4px solid #a6c428;
+        }
+
+        .list-category li img
+        {
+            height: 308px;
+        }
+
+    .list-category .category-title
+    {
+        position: absolute;
+        top: 0;
+        font-family: 'Myriad Pro Condensed', Arial, Tahoma !important;
+        font-size: 100px;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top: 75px;
+        height: 305px;
+        min-width: 300px;
+    }
+
+    .list-category .odd .category-title
+    {
+        left: 0;
+        padding-left: 30px;
+        padding-right: 20px;
+        background-color: rgba(251,200,193,0.7);
+        color: #ce0e01;
+    }
+
+    .list-category .even .category-title
+    {
+        right: 0;
+        padding-right: 30px;
+        padding-left: 20px;
+        background-color: rgba(192,221,72,0.7);
+        color: #4a5b00;
+    }
+
+    .list-category .btn-view-all-product
+    {
+        padding: 5px 20px;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: "Myriad Pro Regular";
+        font-weight: normal;
+        width: 240px;
+        position: absolute;
+    }
+
+    .list-category .odd .btn-view-all-product
+    {
+        background-color: #ce0e01;
+        left: 30px;
+    }
+
+    .list-category .even .btn-view-all-product
+    {
+        background-color: #a6c428;
+        right: 30px;
+    }
+
+.float-right
+{
+    float: right;
+}
+
+.div-cart-summary
+{
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.gray-light-bar .gray-dark-bar .glyphicon-play
+{
+    color: #ea9822;
+    font-size: 23px;
+    margin: 0 5px;
+}
+
+.gray-light-bar .gray-dark-bar .icon
+{
+    display: inline;
+    height: 10px;
+    padding-bottom: 5px;
+}
+
+.order-info
+{
+    background-color: #eeeeef;
+    padding: 20px 0;
+}
+
+    .order-info .row
+    {
+        margin: 18px 0;
+    }
+
+        .order-info .row.amount
+        {
+            margin: 0;
+        }
+
+        .order-info .row.last
+        {
+            margin: 10px 0;
+        }
+
+    .order-info .form-group
+    {
+        margin-bottom: 0;
+        width: 150px;
+    }
+
+    .order-info .gram
+    {
+        position: absolute;
+        top: 7px;
+        left: 170px;
+    }
+
+.loi-gioi-thieu
+{
+    padding: 10px 0;
+}
+
+#confirmOrder
+{
+    padding: 10px 0;
+    display: table;
+    width: 100%;
+}
+
+    #confirmOrder .confirm-message
+    {
+        padding: 15px 0;
+    }
+
+.cart_item .cart_description, .cart_item .cart_unit, .cart_item .cart_total, .cart_item .cart_delete
+{
+    padding-top: 34px;
+}
+
+#cart_summary.table-bordered
+{
+    border: 1px solid #a6c428;
+}
+
+    #cart_summary.table-bordered th
+    {
+        color: #909801;
+        text-align: center;
+    }
+
+    #cart_summary.table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th
+    {
+        border: 1px solid #a6c428;
+    }
+
+.contact .company-info
+{
+    background-color: #a6c428;
+    border-radius: 13px;
+    padding: 30px;
+}
+
+.contact #divCustomerInfo
+{
+    background-color: #e9eaea;
+    border-radius: 13px;
+    padding: 30px;
+    margin: 0;
+}
+
+.contact .contact-info-text
+{
+    font-size: 15px;
+    font-style: italic;
+    margin: 30px 0;
+}
+
+.contact .contact-bg
+{
+    background-image: url(/images/contact.jpg);
+    background-repeat: no-repeat;
+    background-position: 65px 0;
+    height: 579px;
+    padding: 0;
+}
+
+.contact .contact-info
+{
+    padding: 0;
+}
+
+.contact .map-halo
+{
+    background-image: url(/images/map.jpg);
+}
+
+.contact
+{
+    height: 707px;
+}
+
+.div-book-shelf
+{
+    margin: 60px 0;
+}
+
+    .div-book-shelf .book-list li
+    {
+        padding-left: 57px;
+    }
+
+.faq
+{
+}
+
+    .faq .panel
+    {
+        border-radius: 0;
+        box-shadow: none;
+        border: 0;
+        background-color: none;
+    }
+
+        .faq .panel .panel-heading
+        {
+            background: none;
+            padding: 0 10px;
+        }
+
+        .faq .panel .panel-collapse .panel-body
+        {
+            border: 0;
+            padding: 0 10px;
+        }
+
+            .faq .panel .panel-collapse .panel-body p
+            {
+                margin: 0;
+            }
+
+    .faq .faq-question
+    {
+        background-image: url("/images/faq.jpg");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        height: 47px;
+        padding-left: 60px;
+        color: #a6c428;
+        padding-top:6px;
+    }
+
+        .faq .faq-question:hover
+        {
+            color: #707601;
+        }
+
+    .faq .faq-answer-icon
+    {
+        background-image: url("/images/faq.jpg");
+        background-position: 0 -45px;
+        background-repeat: no-repeat;
+        padding-left: 60px;
+        width: 47px;
+        height: 47px;
+        display: inline;
+        float: left;
+    }
+
+    .faq .faq-answer-content
+    {
+        padding-left: 60px;
+    }
+
+.book-banner
+{
+    background-image: url("/images/book.jpg");
+    height: 210px;
+    margin-top: 10px;
+}
+
+.home-news-section
+{
+    height: 600px;
+}
+
+    .home-news-section .home-tin-khuyen-mai
+    {
+        padding-left: 0;
+        padding-right: 20px;
+    }
+
+    .home-news-section .home-tin-tuc
+    {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+
+.home-tin-tuc .tin-tuc-content
+{
+    padding-right: 0;
+}
+
+.home-tin-khuyen-mai .khuyen-mai-content
+{
+    padding-left: 0;
+}
+
+.home-tin-tuc .khuyen-mai-content
+{
+    padding-right: 18px;
+}
+
+.overflow-image
+{
+    overflow: hidden;
+    width: 463px;
+    height: 227px;
+}
+
+    .overflow-image img
+    {
+        height: 227px;
+    }
+
+.overflow-small-image
+{
+    overflow: hidden;
+    width: 210px;
+    height: 129px;
+}
+
+    .overflow-small-image img
+    {
+        height: 129px;
+    }
+
+.short-description
+{
+    width: 463px;
+    height: 113px;
+    background-color: #f6dc2c;
+    padding: 10px 5px;
+    color: #474646;
+}
+
+.bigNewsImage
+{
+    overflow: hidden;
+    border: 1px solid #c7ad00;
+    width: 463px;
+}
+
+.below-small-news .small-news
+{
+    padding: 0;
+    margin-top: 12px;
+    height: 180px;
+}
+
+    .below-small-news .small-news.right-caption
+    {
+        padding: 0;
+        margin-top: 8px;
+    }
+
+
+
+.first-new-title
+{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.short-description-wide
+{
+    display: inline-block;
+    height: 129px;
+    padding: 2px 10px;
+    width: 253px;
+    overflow: hidden;
+    background-color: #ccf131;
+}
+
+.overflow-small-image-wide
+{
+    display: inline-block;
+    float: left;
+    height: 129px;
+    overflow: hidden;
+    width: 210px;
+}
+
+    .overflow-small-image-wide img
+    {
+        height: 129px;
+    }
+
+.bigNewsImageWide
+{
+    height: 150px;
+    width: 463px;
+}
+
+    .bigNewsImageWide a
+    {
+        color: #474646;
+    }
+
+.small-news.even
+{
+    padding-left: 22px;
+}
+
+.overfloat-scrolling-image
+{
+    width: 234px;
+    height: 177px;
+    overflow: hidden;
+    margin: 0 10px 0 0;
+    border: 10px solid #ffffff;
+}
+/*==================================================================================*/
+/********************************
+ * generic als elements styling
+ ********************************/
+.als-container
+{
+    position: relative;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.als-viewport
+{
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.als-wrapper
+{
+    position: relative;
+    list-style: none;
+}
+
+.als-item
+{
+    position: relative;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+}
+
+.als-prev, .als-next
+{
+    position: absolute;
+    cursor: pointer;
+    clear: both;
+}
+
+
+/**************************
+ * specific als elements
+ * styling for #lista1
+ **************************/
+
+
+#lista1 .als-item
+{
+    min-height: 152px;
+    min-width: 128px;
+}
+
+    #lista1 .als-item img
+    {
+        position: relative;
+        display: block;
+        vertical-align: middle;
+        margin-bottom: 8px;
+        height: 197px;
+    }
+
+#lista1 .als-prev, #lista1 .als-next
+{
+    top: 58px;
+    width: 15px;
+    height: 22px;
+}
+
+#lista1 .als-prev
+{
+    left: 90px;
+}
+
+#lista1 .als-next
+{
+    right: 100px;
+}
+
+.div-scroll-image
+{
+    overflow: hidden;
+    background-color: #dddddd;
+    height: 197px;
+}
+
+.home-working-picture
+{
+}
+
+.news-home .listNewsOnTop
+{
+    display: table-cell;
+}
+
+    .news-home .listNewsOnTop .big-news-wide
+    {
+        height: auto;
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+        .news-home .listNewsOnTop .big-news-wide .overflow-small-image-wide
+        {
+            height: 414px;
+            width: 670px;
+        }
+
+        .news-home .listNewsOnTop .big-news-wide img
+        {
+            height: 414px;
+        }
+
+        .news-home .listNewsOnTop .big-news-wide .short-description-wide
+        {
+            display: inline-block;
+            height: 414px;
+            padding: 10px 10px;
+            width: 296px;
+            overflow: hidden;
+            background-color: #f6dc2c;
+        }
+
+    .news-home .listNewsOnTop li
+    {
+        list-style: none;
+        float: left;
+        width: 252px;
+    }
+
+.below-small-news .caption
+{
+    padding: 5px;
+    width: 210px;
+}
+
+.news-home .below-small-news .caption
+{
+    padding: 5px;
+    width: 210px;
+    display: table;
+}
+
+.news-home .listNewsOnTop .below-small-news
+{
+    overflow: hidden;
+    position: relative;
+    height: 180px;
+}
+
+    .news-home .listNewsOnTop .below-small-news ul
+    {
+        position: absolute;
+        width: 1200px;
+    }
+
+.news-home .listNewsOnTop .small-news.odd
+{
+}
+
+.news-home .listNewsOnTop .small-news.even
+{
+}
+
+.news-home .listNewsOnLeft
+{
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.news-home .listNewsOnRight
+{
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.right-caption .overflow-small-image
+{
+    float: left;
+}
+
+.right-caption .caption
+{
+    float: left;
+}
+
+.small-news.even.right-caption
+{
+    padding-left: 0;
+}
+
+.below-small-news .small-news.right-caption, .bigNewsImageWide.wide-news-top.news-topright-caption
+{
+    height: 128px;
+}
+
+.img130
+{
+    border: 1px solid #d8d8d8;
+    float: left;
+    margin-right: 5px;
+    padding: 2px;
+    width: 130px;
+}
+
+.mt1
+{
+    margin-top: 5px;
+}
+
+.line1
+{
+    background: #dbdbdb none repeat scroll 0 0;
+    height: 1px;
+    overflow: hidden;
+}
+
+.mt3
+{
+    margin-top: 15px;
+}
+
+.clearfix
+{
+    display: block;
+    width: 100%;
+}
+
+.btn-view-all
+{
+    padding: 5px 10px;
+    background-color: #84a301;
+    float: right;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.related-news div.col-xs-6.left
+{
+    padding-left: 0;
+}
+
+.related-news div.col-xs-6.right
+{
+    padding-right: 0;
+}

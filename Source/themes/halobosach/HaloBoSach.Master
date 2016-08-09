@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HaloBoSach.Master.cs" Inherits="HaloBoSach.HaloBoSach" %>
+
+<%@ Import Namespace="Microsoft.AspNet.FriendlyUrls" %>
+<%@ Register Src="/ctrl/TopNav.ascx" TagName="TopNav" TagPrefix="uc1" %>
+<%@ Register Src="~/ctrl/SlideShow.ascx" TagPrefix="uc1" TagName="SlideShow" %>
+<%@ Register Src="~/ctrl/FloatShopCart.ascx" TagPrefix="uc1" TagName="FloatShopCart" %>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" >
+    <title>Cty TNHH Thanh Nhan Food</title>
+    <%--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">--%>
+    <link href="CSSreset.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/fonts/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="halobosach.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" media="all" type="text/css" href="~/Styles/hover_drop_2.css" />
+    <%--<script type="text/javascript" src="/Scripts/jquery.js"></script>--%>
+    <script type="text/javascript" src="/Scripts/jquery-2.1.1.min.js"></script>
+    
+    <script type="text/javascript" src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/iefix.js" type="text/javascript"></script>
+    <script src="/Scripts/JSUtilities.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/Scripts/jquery.scrollbox.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body onload="ieFix('menu')">
+    <!--[if IE 7]><div class="ie7"><![endif]-->
+    <!--[if IE 8]><div class="ie8"><![endif]-->
+    <form id="form1" runat="server">
+        <div class="main-content">
+            <div class="div-header">
+                <div class="company-logo">
+                    <a href="/">
+                        <img src="/images/logo.png" class="img-logo" />
+                    </a>
+                </div>
+                <div class="header-top-nav">
+                    <uc1:TopNav ID="TopNav1" runat="server" BreakLineText="true" />
+                </div>
+                <div class="div-slide-show">
+                    <uc1:SlideShow runat="server" ID="SlideShow" StoreProcedureGetData="Adv_GetTopAdv" IsIncludeScript="true" Height="778px" CanBookTicket="false" Effect="simpleFade" ShowCaption="false" />
+                </div>
+
+            </div>
+            <div class="div-contain">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="div-footer">
+                <div class="green-bar">
+                    <span class="web-url">halobosach.vn |  halofreshbeef.com</span>
+                    <span class="company-name">Công ty TNHH Thanh Nhân Food - Chuyên cung cấp sản phẩm thịt bò tươi  và các sản phẩm khác</span>
+                </div>
+                <div class="footer-info">
+                    <div class="col-xs-5 company-info">
+                        <div>
+                            <span class="bold-text">CÔNG TY TNHH THANH NHÂN FOOD</span>                            <br />                            <b>Địa chỉ:</b> 111/17 Lũy Bán Bích                            <br />                            Phường Tân Thới Hòa, Quận Tân Phú, TP.HCM                            <br />                            <br />                            <span class="bold-text">HALO FRESH BEEF</span>                            <br />                            Số 6, đường Cây Keo, P. Hiệp Tân, Q. Tân Phú                            <br />                            <b>Điện thoại:</b> 08 6681 4414  |  <b>Hotline:</b> 090 99 66 033                            <br />                            <b>Website:</b> halobosach.vn  |  halofreshbeef.com
+                        </div>
+                        <div class="more-info">
+                            <a id="lnkWorkingTime" runat="server"><span class="glyphicon glyphicon-play"></span>Thời gian hoạt động</a>
+                            <br />
+                            <a id="lnkHowToUse" runat="server"><span class="glyphicon glyphicon-play"></span>Hướng dẫn đặt hàng</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-3 safe-food-cerificate">
+                        <span class="bold-text">Chứng nhận <br />AN TOÀN THỰC PHẨM</span>
+                        <img src="/images/chung_nhan.jpg"/>
+                    </div>
+                    <div class="col-xs-4 other">
+                        <div class="safe-web-cert">
+                            <span class="bold-text">Chứng nhận<br />WEBSITE AN TOÀN</span>
+                            <img src="/images/bo_cong_thuong.png"/>
+                        </div>
+                        <div class="follow-us">
+                            <span class="bold-text">THEO DÕI CHÚNG TÔI TẠI:</span>
+                            <div class="div-social">
+                                <a href="https://www.facebook.com/HALOFRESHBEEF"><div class="facebook col-xs-3"></div></a>
+                                <a><div class="google-plus col-xs-3"></div></a>
+                                <a><div class="tweeter col-xs-3"></div></a>
+                                <a><div class="youtube col-xs-3"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="gray-bar"><span>Website thuộc quyền sở hữu của Công ty TNHH Thanh Nhân</span><span class="green-point">●</span>Phát triển bởi ML Media<span class="green-point">●</span>08/2016</div>
+            <uc1:FloatShopCart runat="server" id="FloatShopCart" />
+        </div>
+        
+    </form>
+    <!--[if IE 7]></div><![endif]-->
+    <!--[if IE 8]></div><![endif]-->
+
+</body>
+</html>

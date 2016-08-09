@@ -1,0 +1,45 @@
+﻿/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    .set-color
+    {
+        background-color:green;
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .set-color
+    {
+        background-color:blue;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .set-color
+    {
+        background-color:yellow;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .set-color
+    {
+        background-color:orange;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .set-color
+    {
+        background-color:red;
+    }
+}
+
+.set-color
+{
+    width:200px;
+    height:200px;
+}

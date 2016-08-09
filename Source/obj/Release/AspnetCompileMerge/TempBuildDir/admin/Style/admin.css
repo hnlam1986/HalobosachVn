@@ -1,0 +1,60 @@
+﻿body 
+{
+    margin: 5px;
+}
+h1 {
+    font-size: 14px!important;
+    margin: 5px!important;
+    font-weight: bold!important;
+}
+label {
+    font-weight: normal!important;
+}
+.mainDiv 
+{
+    padding: 5px;
+    width: 1250px;
+}
+.treeViewFrame 
+{
+    padding-bottom: 10px;
+    border-style: solid;
+    border-color: darkgray;
+    border-width: 1px;
+    width: 400px;
+    float: left;
+}
+.ListNewsFrame {
+    margin-left: 5px;
+    width: 800px;
+    float: left;
+}
+.NewsItemLine {
+    width: 100%;
+}
+.NewsItemLine thead{
+    background-color: dodgerblue;
+}
+.NewsSubmitButton {
+    width: 100%;
+}
+input.error {
+    background: url("/admin/img/icon-fail.png") no-repeat scroll right center #FFEBEF;
+    color: #480000;
+}
+.custom-table {
+    border-collapse: collapse;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    width: 100%;
+}
+.custom-table thead {
+    background-color: #A7C942;
+    color: #FFFFFF;
+    padding-bottom: 4px;
+    padding-top: 5px;
+    text-align: left;
+}
+.custom-table td, .custom-table th {
+    border: 1px solid #98BF21;
+    padding: 3px 7px 2px;
+}
